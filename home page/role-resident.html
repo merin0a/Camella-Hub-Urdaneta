@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resident Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <header class="page-topbar">
+            <span class="modal-badge">Resident Portal</span>
+            <a href="home.html" class="btn-secondary">← Back to Home</a>
+        </header>
+        <main class="dashboard-box">
+            <div class="dash-stats">
+                <div class="stat-card"><h4>2</h4><span>Active Reports</span></div>
+                <div class="stat-card"><h4>1</h4><span>Visitor Pass</span></div>
+                <div class="stat-card"><h4>94%</h4><span>Water Tank</span></div>
+            </div>
+            <h2>Recent Reports & Requests</h2>
+            <table class="dash-table">
+                <thead><tr><th>Issue</th><th>Category</th><th>Status</th></tr></thead>
+                <tbody>
+                    <tr><td>Streetlight blinking at Block 4</td><td>Electrical</td><td><span class="status-pill progress">In Progress</span></td></tr>
+                    <tr><td>Pothole near main gate</td><td>Roads</td><td><span class="status-pill pending">Pending</span></td></tr>
+                </tbody>
+            </table>
+            <button class="action-btn-sm" style="margin-top: 16px;" onclick="alert('Opening report form...')">+ Report New Issue</button>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
