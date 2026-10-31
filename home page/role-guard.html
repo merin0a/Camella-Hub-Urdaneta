@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guard Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="page-container">
+        <header class="page-topbar">
+            <span class="modal-badge">Guard Portal</span>
+            <a href="index.html" class="btn-secondary">← Back to Home</a>
+        </header>
+        <main class="dashboard-box">
+            <div class="dash-stats">
+                <div class="stat-card">
+                    <h4>42</h4><span>Entries Today</span>
+                </div>
+                <div class="stat-card">
+                    <h4>5</h4><span>Expected Guests</span>
+                </div>
+                <div class="stat-card">
+                    <h4>Secure</h4><span>Perimeter Status</span>
+                </div>
+            </div>
+            <h2>Gate Logbook (Replaces Paper Log)[cite: 1]</h2>
+            <table class="dash-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Visitor / Vehicle</th>
+                        <th>Destination</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>16:30</td>
+                        <td>LBC Courier (AB-1234)</td>
+                        <td>Block 8 Lot 12</td>
+                    </tr>
+                    <tr>
+                        <td>15:15</td>
+                        <td>Contractor: ABC Plumbing</td>
+                        <td>Clubhouse</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="action-btn-sm" style="margin-top: 16px;" onclick="alert('Opening Gate Entry log...')">+ Log
+                New Visitor</button>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
